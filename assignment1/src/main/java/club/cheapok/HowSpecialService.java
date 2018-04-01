@@ -10,7 +10,7 @@ Assume the distribution of the grades follows a Normal Distribution with mean: 9
 
 public class HowSpecialService {
     public static void main(String[] args) {
-        System.out.println(howSpecialAmI(8.5));
+        System.out.println( howSpecialAmI( 20 ) * 100 +" %"  );
     }
 
     /*
@@ -19,13 +19,10 @@ public class HowSpecialService {
      * http://commons.apache.org/proper/commons-math/javadocs/api-3.5/org/apache/commons/math3/distribution/NormalDistribution.html
      * concepts you need to grasp: cummulative distribution
      */
+
     private static double howSpecialAmI(double yourGrade) {
-        double probability = 0;
-        // your code goes here
 
-
-        return probability;
+        return  new NormalDistribution(9.77, 4.42).cumulativeProbability(yourGrade);
     }
-
 
 }
