@@ -10,7 +10,7 @@ Assume the distribution of the grades follows a Normal Distribution with mean: 9
 
 public class HowSpecialService {
     public static void main(String[] args) {
-        System.out.println( howSpecialAmI( 20 ) * 100 +" %"  );
+        System.out.println( howSpecialAmI( 20   ) * 100 +" %"  );
     }
 
     /*
