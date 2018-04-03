@@ -7,7 +7,7 @@ Assume the distribution of the grades follows a Normal Distribution with mean: 9
  make a function that takes as an input your grade and prints on the screen:
  the PROBABILITY you’re better than a random colleague.
 */
-   
+
 public class HowSpecialService {
     public static void main(String[] args) {
         System.out.println( howSpecialAmI( 20   ) * 100 +" %"  );
